@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+}
+header.Gareths-Gallery{
+    width: 100%;
+    padding: 30px;
+    background-color: rgb(149, 241, 241);
+    font-family: Arial;
+    justify-items: center;
+    box-sizing: border-box;
+}
+.Gallery{
+    justify-items: center;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1rm;
+}
+figure.imagen img{
+    width: 99%;
+    height: 99%;
+    border: 10px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+@media (min-width:901px) {
+    .Gallery{
+        grid-template-columns: repeat(3,1fr);;
+    }
+}
+@media (min-width: 601px) and (max-width:900px){
+    .Gallery{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media (max-width:600px) {
+    .Gallery{
+        grid-template-columns: 1fr;
+    }
+}
